@@ -1,0 +1,104 @@
+section.app {
+  border: 1px solid #ccc;
+  border-radius: 0.1rem;
+  width: 400px;
+  h1 {
+    text-align: center;
+  }
+  form {
+    button {
+      display: block;
+      width: 98%;
+      margin: 0.5rem auto;
+      padding: 0.8rem;
+      background: none;
+      color: #5cb85c;
+      border: 1px solid #5cb85c;
+      border-radius: 0.125rem;
+      transition: all .2s ease-in-out;
+      &:hover {
+        background: #5cb85c;
+        color: #fff;
+      }
+      &:focus {
+        outline-color: #5cb85c;
+      }
+    }
+    .username-container {
+      display: flex;
+      #username {
+        flex-grow: 3;
+        padding: 0.8rem;
+        border: none;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        transition: all .2s ease-in-out;
+        &:focus {
+          border-top: 1px solid #5cb85c;
+          border-bottom: 1px solid #5cb85c;
+          outline: none;
+        }
+      }
+      .username-btn {
+        flex-grow: 1;
+        display: inline;
+        width: auto;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        border-top: 1px solid #5cb85c;
+        border-bottom: 1px solid #5cb85c;
+        border-left: 1px solid #5cb85c;
+      }
+    }
+  }
+  .chat-window {
+    height: 35vh;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow-y: scroll;
+    overflow-x: none;
+    word-wrap: break-word;
+    &::-webkit-scrollbar {
+        width: 0.3rem;
+        background: #777;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+    }
+    .chat-message {
+      margin: 0.5rem 0;
+      padding: 0.6rem 0.3rem;
+      background: rgba(204, 204, 204, 0.15);
+      border: 1px solid #ccc;
+      border-radius: 0.125rem;
+      .chat-author {
+        color: #7fb889;
+      }
+      p {
+        margin: 0;
+      }
+    }
+
+  }
+  .textarea-container {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #ccc;
+    textarea {
+      padding: 0;
+      margin: 0;
+      height: 10vh;
+      width: 100%;
+      border: none;
+      resize: none;
+      font-family: 'Open Sans', sans-serif!important;
+      transition: all .2s ease-in-out;
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid #5cb85c;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Babel with Gulp</title>
+  <link rel="stylesheet" href="./styles/bundle.css">
+</head>
+<body>
+
+  <main>
+
+    <section class="app">
+      <section id="head">
+        <h1>Welcome to ChatBox</h1>
+
+        <form id="userform">
+          <div class="username-container">
+            <input type="text" id="username" palceholder="User Name">
+            <button class="username-btn" type="submit">Set Name</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="chat">
+        <div class="chat-window"></div>
+
+        <form id="chatform">
+          <div class="textarea-container">
+            <textarea type="text" id="chatbox"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </section>
+
+  </main>
+
+  <script src="./js/bundle.js"></script>
+</body>
+</html>

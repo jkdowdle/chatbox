@@ -1,0 +1,100 @@
+section.app {
+  border: 1px solid #ccc;
+  border-radius: 0.1rem;
+  width: 400px; }
+  section.app h1 {
+    text-align: center; }
+  section.app form button {
+    display: block;
+    width: 98%;
+    margin: 0.5rem auto;
+    padding: 0.8rem;
+    background: none;
+    color: #5cb85c;
+    border: 1px solid #5cb85c;
+    border-radius: 0.125rem;
+    transition: all .2s ease-in-out; }
+    section.app form button:hover {
+      background: #5cb85c;
+      color: #fff; }
+    section.app form button:focus {
+      outline-color: #5cb85c; }
+  section.app form .username-container {
+    display: flex; }
+    section.app form .username-container #username {
+      flex-grow: 3;
+      padding: 0.8rem;
+      border: none;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      transition: all .2s ease-in-out; }
+      section.app form .username-container #username:focus {
+        border-top: 1px solid #5cb85c;
+        border-bottom: 1px solid #5cb85c;
+        outline: none; }
+    section.app form .username-container .username-btn {
+      flex-grow: 1;
+      display: inline;
+      width: auto;
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      border-top: 1px solid #5cb85c;
+      border-bottom: 1px solid #5cb85c;
+      border-left: 1px solid #5cb85c; }
+  section.app .chat-window {
+    height: 35vh;
+    margin-top: 1rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    overflow-y: scroll;
+    overflow-x: none;
+    word-wrap: break-word; }
+    section.app .chat-window::-webkit-scrollbar {
+      width: 0.3rem;
+      background: #777; }
+    section.app .chat-window::-webkit-scrollbar-thumb {
+      background-color: #ccc; }
+    section.app .chat-window .chat-message {
+      margin: 0.5rem 0;
+      padding: 0.6rem 0.3rem;
+      background: rgba(204, 204, 204, 0.15);
+      border: 1px solid #ccc;
+      border-radius: 0.125rem; }
+      section.app .chat-window .chat-message .chat-author {
+        color: #7fb889; }
+      section.app .chat-window .chat-message p {
+        margin: 0; }
+  section.app .textarea-container {
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #ccc; }
+    section.app .textarea-container textarea {
+      padding: 0;
+      margin: 0;
+      height: 10vh;
+      width: 100%;
+      border: none;
+      resize: none;
+      font-family: "Open Sans", sans-serif !important;
+      transition: all .2s ease-in-out; }
+      section.app .textarea-container textarea:focus {
+        outline: none;
+        border-bottom: 1px solid #5cb85c; }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5; }
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+
+section {
+  align-self: center; }
